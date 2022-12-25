@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: "open sans", sans-serif;
+}
+nav{
+    background-color: #252d2f;
+       
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    width:1200px;
+    margin:auto;
+}
+/* nav section css start */
+nav .logo{
+    width:15%;
+    display: inline-block;
+    padding: 12px 20px;
+}
+nav .menu{
+    width: 75%;
+    display:inline-block;
+    color:#ffffff;
+    text-transform: uppercase;
+}
+nav .menu ul{
+    justify-content: right;
+    text-align: right;
+    list-style-type: none;
+    
+}
+nav .menu ul li{
+   padding: 29px 20px;
+   
+}
+nav .menu ul li a{
+    display: inline-block;
+    font-size:16px ;
+    font-weight: 800;
+    text-decoration: none;
+    color:#ffffff;
+}
+/* nav section ccs end */
+/* banner section css start */
+
+#banner{
+    background-image: url(../img/banner1.png);
+    height: 1000px;
+    text-align: center;
+    
+}
+#banner h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    border: #ffffff;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 20px 0;
+    text-transform: uppercase;
+    width:fit-content;
+    margin: auto;
+}
+#banner a{
+    text-align: center;
+    color:#ffffff;
+    display: inline-block;
+    font-weight: 700;
+    padding: 20px 23px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white
+    
+     
+}
+/* banner section css end */
+/* bottom section css start */
+#bottom .child1{
+    width: 33%;
+    margin: 80px 0;
+}
+#bottom .child1 h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #566366;
+    margin: 28px 0;
+    text-transform: uppercase;
+}
+#bottom .child1 p{
+    font-size: 18px;
+    color: #919191;
+    margin: auto;
+}
+/* bottom section css end */
+/* about section css start */
+#about .about_img{
+    width: 30%;
+    position: relative;
+}
+#about .about_img img{
+    width:100%;
+}
+#about .about_img  img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.60s; 
+    transform: scale(0) rotate(50deg);
+}
+#about .about_img:hover img:last-child{
+    opacity: 1;
+    visibility: hidden;
+    transform: scale(1) rotate(0);
+}
+#about .about_info{
+    width: 70%;
+    background-color: #f2f2f1;
+    padding: 50px 200px 10px 100px;
+}
+#about .about_item{
+    width: 50%;
+    margin-bottom: 20px;
+
+}
+#about .about_item .about_icon{
+    width:15%;
+}
+#about .about_item .about_info1{
+    width: 85%;
+}
+#about .about_info h4{
+    font-size: 24px;
+    color: #566366;
+    text-transform: uppercase;
+}
+#about .about_info p{
+    font-size: 24px;
+    color:#919191;
+    font-weight: 400;
+}
+/* about section css end */
+/* skills section css start */
+#skill .skill_info{
+    width: 50%;
+    padding: 50px;
+}
+#skill .skill_info h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #566366;
+    text-transform: uppercase;
+}
+#skill .skill_info p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #919191;
+}
+#skill .skill_info a{
+    font-size: 18px;
+    color: #2ecc71;
+    border: 2px solid #2ecc71;
+    /* border-top: 2px solid #2ecc71;
+    border-right: 2px solid #2ecc71;
+    border-bottom: 2px solid #2ecc71;
+    border-left: 2px solid #2ecc71; */
+    text-transform: uppercase;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+#skill .skill_info1{
+    width: 50%;
+    /* padding:50px; */
+}
+#skill .skill_info1 h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: #566366;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding: 5px 0;
+}
+#skill .inside{
+    width: 100%;
+    background-color: #f2f2f1;
+}
+#skill .outside{
+    text-align: right;
+    background-color: #2ecc71;
+}    
+#skill .outside1{
+    width: 90%;
+}
+#skill .outside2{
+    width:80%;
+}
+#skill .outside3{
+    width: 90%;
+}
+#skill  .outside4{
+    width: 70%;
+}
+/* resume section start */
+#resume .resume_info{
+    text-align: center;
+    background-color: #f2f2f1;
+    padding: 70px 200px;
+}
+#resume .resume_info h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000 ;
+    /* padding-top: 50px ; */
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+#resume .resume_info p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #919191;
+    padding-bottom: 40px;
+    /* padding: 20px 10px;
+     */
+}
+#resume .resume_info a{
+    font-size: 18px;
+    font-weight: 700;
+    color: #2ecc71;
+    text-decoration: none;
+    border: 2px solid #2ecc71; 
+    padding: 10px 10px;
+    text-transform: uppercase;
+    margin: 60px 0;
+}
+/* resume section css end */
+/* education section css start */
+
+#my_education .edu_info{
+    width: 50%;
+}
+#my_education .edu_info h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #566366;
+    text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+#my_education .edu_info p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #919191;
+    padding-right: 50px;
+    
+}
+.graphic_cit{
+    width: 50%;
+    background-color: #ffffff;
+}
+.graphic_cit h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: #566366;
+    text-transform: uppercase;
+    padding-top: 40px;
+    
+}
+.graphic_cit p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #919191;
+    padding-right: 100px;
+    /* padding: 0 10px; */
+}
+.graphic_cit a{
+    font-size: 18px;
+    border: 2px solid #2ecc71;
+    background-color: #2ecc71;
+    margin: 20px 0;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+/* education section css end */
+/* work section css start */
+#work_experience .work_info{
+    width: 50%;
+    padding: 50px 10px;
+}
+.work_info h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #566366;
+    text-transform: uppercase;
+    padding : 30x 0;
+}
+.work_info p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #919191;
+    padding-top: 20px;
+    padding-right: 30px;
+
+}
+.work_info1{
+    width: 50%;
+    
+}
+.work_info1 h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: #566366;
+    text-transform: uppercase;
+    padding: 50px 30px 20px 10px;
+    
+}
+.work_info1 p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #919191;
+    padding: 10px 10px;
+
+}
+.work_info1 a{
+    font-size: 14px;
+    font-weight: 700;
+    color:#ffffff ;
+    text-decoration: none;
+    background-color: #2ecc71;
+    border: 2px solid #2ecc71;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    
+}
+
+/* work section css end */
+/*  john stone section css start*/
+#stone .stone_info{
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.stone_info p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #919191;
+    padding: 60px 100px 0 100px;
+}
+.stone_info h5{
+    font-size: 18px;
+    font-weight: 700;
+    color: #252d2f;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px o;
+}
+#portfolio .portfolio_info{
+    text-align: center;
+}
+#portfolio .portfolio_info h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #566366;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+#portfolio .portfolio_info p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #919191;
+    padding-bottom: 50px;
+}
+/* john stone section css end */
